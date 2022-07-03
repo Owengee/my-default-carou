@@ -16,7 +16,7 @@
   width: 100%;
 }
 .carousel__track-container {
-  background: lightgreen;
+  /* background: lightgreen; */
   height: 100%;
   position: relative;
   overflow: hidden;
