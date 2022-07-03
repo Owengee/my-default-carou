@@ -12,20 +12,24 @@
 .carousel__image {
   height: 100%;
   object-fit: cover;
-  max-width: 100%;
-  display: block;
-  margin: auto;
+  width: 100%;
 }
 .carousel__track-container {
-  /* background: lightgreen; */
+  background: lightgreen;
   height: 100%;
   position: relative;
+  overflow: hidden;
 }
+/* this styles help the movement of the image */
 .carousel__track {
   padding: 0;
   margin: 0;
   list-style: none;
+  position: relative;
+  height: 100%;
+  transition: transform 250ms ease-in;
 }
+/* this styles help the movement of the image */
 .carousel__slide {
   position: absolute;
   top: 0;
@@ -47,24 +51,27 @@
   right: -40px;
 }
 .carousel__button img {
-  width: 25px;
+  width: 12px;
 }
 .carousel__nav {
   /* background: pink; */
   display: flex;
   justify-content: center;
   padding: 10px 0;
-  cursor: pointer;
 }
 
 .carousel__indicator {
   border: 0;
   border-radius: 50%;
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   background: rgba(0, 0, 0, 0.3);
   margin: 0 12px;
+  cursor: pointer;
 }
 .carousel__indicator.current-slide {
   background: rgba(0, 0, 0, 0.75);
+}
+.is-hidden {
+  display: none;
 }
